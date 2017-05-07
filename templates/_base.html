@@ -22,17 +22,20 @@
 
 <body>
 
-  <nav class="navbar navbar-toggleable-md navbar-light" style="background-color: #cccccc;">
-   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false">
           Регион: {{ region }}
         </a>
         <div class="dropdown-menu regions" aria-labelledby="navbarDropdownMenuLink">
         </div>
       </li>
     </ul>
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="nav navbar-nav ml-auto justify-content-end">
             <li class="nav-item">
                 <a class="nav-link" href="#">{{ user }}</a>
@@ -53,6 +56,7 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+ <script src="../js/base.js" type="text/javascript"></script>
  </body>
 
 </html>
