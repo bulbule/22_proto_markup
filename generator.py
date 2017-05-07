@@ -4,7 +4,6 @@ from staticjinja import make_site
 
 
 CONFIG = 'config.json'
-TEMPLATES_PATH = 'templates'
 SITE_PATH = 'site'
 
 
