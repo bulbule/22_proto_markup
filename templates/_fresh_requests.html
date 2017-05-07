@@ -1,0 +1,46 @@
+<div class="container fresh-requests">
+  <h2 class="text-center">{{ requests }}</h2>
+  <div class="container">
+    <div class="row">
+    <div class="col-md-6 col-sm-6">
+      <div class="text-left">
+         раздел: <a href="#" data-toggle="dropdown" class="dropdown-toggle">Все<b class="caret"></b></a>
+      <div class="dropdown-menu">
+         <a class="dropdown-item" href="#">Action</a>
+         <a class="dropdown-item" href="#">Another action</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-sm-6">
+    <div id="dropdown-fresh" class="text-right">
+       регион: <a href="#" data-toggle="dropdown" class="dropdown-toggle">{{ region }} <b class="caret"></b></a>
+       <div class="dropdown-menu dropdown-menu-right regions">
+       </div>
+    </div>
+  </div>
+  </div>
+ </div>
+  {% for num in range(num_of_requests) %}
+  <div class="container fresh-requests-main">
+    <div class="d-flex justify-content-between">
+      <div class="p-2 text-left text-muted time">{{ time }}</div>
+      <div class="p-2 text-right">
+        <button class="btn btn-link text-muted">в закладки</button>
+      </div>
+    </div>
+   <p>{{ request }}</p>
+   <p>{{ from_name }}</p>
+   <div class="d-inline">
+     <button class="btn btn-default">Показать телефон </button><span class="label label-default text-muted"> {{ views }} просмотров</span>
+   </div>
+ </div>
+  {% endfor %}
+  <div class="container fresh-requests-main text-center">
+  {% if page == "index" %}
+     <a href="requests.html" class="btn btn-secondary requests">Посмотреть все заявки</a>
+  {% else %}
+     <button class="btn btn-secondary requests">Показать еще</button>
+  {% endif %}
+  </div>
+
+</div>

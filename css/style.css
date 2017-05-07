@@ -1,0 +1,144 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 20px;
+}
+
+.container-fluid {
+   margin-top: 0.5cm;
+}
+
+.navbar.navbar-toggleable-md.navbar-light {
+  background-color: #cccccc;
+}
+
+.navbar.navbar-toggleable-md.navbar-light a {
+  color: black;
+}
+
+#participants {
+   text-indent: 3cm;
+}
+
+.search-form {
+    border-width: thin;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #d1d1e0;
+}
+
+.dropdown-menu-right {
+  right: 0;
+  left: auto;
+}
+.container{
+  max-width: 800px;
+  margin-top: 1cm;
+}
+
+.container.fresh-requests-main {
+  margin-top: 0.5cm;
+  border-top: solid 1px;
+  padding-bottom: 0.5cm;
+}
+
+.btn.btn-secondary.requests {
+  margin-top: 0.6cm;
+}
+
+.time {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 38px;
+}
+.jumbotron-heading {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.first-checkbox {
+  font-size: 80%;
+}
+
+.form-group.row.description {
+   margin-top:0.5cm;
+}
+
+#description {
+  font-size: 80%;
+}
+
+/*label[for=phone]::after {
+  content: " *";
+}
+
+label[for=description-label]::after {
+  content: " *";
+}*/
+
+.btn.btn-secondary {
+  text-transform: uppercase;
+  border: solid;
+  border-radius: 15px;
+  border-width: thin;
+}
+
+#dropdown-search {
+  padding: 0;
+}
+
+#jumbo {
+	border-radius: 5px;
+  padding: 10px;
+}
+
+.user-icon-reviews {
+  padding-top: 50%;
+}
+#button-reviews {
+  margin-top: 30px;
+}
+
+.fa.fa-chevron-right{
+	position: absolute;
+	right: -30px;
+}
+
+.fa.fa-chevron-left {
+	position: absolute;
+	left: -30px;
+}
+
+.carousel-inner {
+	border: 3px solid #ccc;
+  border-radius: 5px;
+}
+
+.fa {
+  color: black;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  margin-bottom: 20px;
+  margin-top: 0.5cm;
+  width: 100%;
+  color: black;
+  background-color: #cccccc;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+}
+
+#footer-text {
+  font-size: 17px;
+  padding-left: 15px;
+  padding-right: 25px;
+}
