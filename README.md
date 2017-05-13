@@ -8,7 +8,7 @@ $ pip install -r requirements.txt
 # Usage 
 To build a site, run:
 ```#!bash
-$ python generator py
+$ python generator.py
 ```
 
 # Project Goals
