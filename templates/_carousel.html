@@ -3,23 +3,28 @@
   <div class="carousel-inner" role="listbox">
     {% for ind in range(num_of_reviews)%}
     <div class="carousel-item {% if ind == 0 %} active {% endif %}">
-							<div class="col-sm-2 offset-sm-1 text-center">
-								<i  class="fa fa-user fa-5x user-icon-reviews" aria-hidden="true"></i>
-							</div>
-							<div  class="col-sm-7">
-								<p></p>
-								<p><b>{{ review_user }}</b></p>
-								<p>{{ review }}</p>
-							</div>
+							<div class="container">
+                  <div class="row">
+								  <div class="col-md-2 text-center col-12 align-self-center">
+                    <i  class="fa fa-user fa-4x user-icon-reviews" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-md-10 col-12">
+                      <p><b>{{ review_user }}</b></p>
+                      <p>{{review}}</p>
+                  </div>
+                </div>
+					</div>
 		</div>
     {% endfor %}
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <i class="fa fa-chevron-left" ></i>
+    <i class="fa fa-chevron-left hidden-xs-down" ></i>
+    <i class="fa fa-chevron-left hidden-sm-up" style="position:relative;" ></i>
     <span class="sr-only">Previous</span>
   </a>
   <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+    <i class="fa fa-chevron-right hidden-xs-down"></i>
+    <i class="fa fa-chevron-right hidden-sm-up" style="position:relative;" ></i>
     <span class="sr-only">Next</span>
   </a>
 </div>
@@ -27,4 +32,3 @@
 <div class="col-sm-12 text-center">
    <button id="button-reviews" type="submit" class="btn btn-secondary">Оставить отзыв</button>
 </div>
-<!-- </div> -->

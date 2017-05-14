@@ -1,37 +1,42 @@
-<div class="container fresh-requests">
+<div class="container fresh-requests mywidth">
   <h2 class="text-center">{{ requests }}</h2>
-  <div class="container">
-    <div class="row">
-    <div class="col-md-6 col-sm-6">
-      <div class="text-left">
+  <div class="container fresh-requests-header">
+    <div class="row justify-content-end">
+    <div class="col-md-6 col-12">
+      <!-- <div class="text-left"> -->
          раздел: <a href="#" data-toggle="dropdown" class="dropdown-toggle">Все<b class="caret"></b></a>
       <div class="dropdown-menu">
          <a class="dropdown-item" href="#">Action</a>
          <a class="dropdown-item" href="#">Another action</a>
       </div>
-    </div>
+    <!-- </div> -->
   </div>
-  <div class="col-md-6 col-sm-6">
-    <div id="dropdown-fresh" class="text-right">
+  <div class="col-md-5 offset-md-1 col-12 text-md-right">
+    <div id="dropdown-fresh">
        регион: <a href="#" data-toggle="dropdown" class="dropdown-toggle">{{ region }} <b class="caret"></b></a>
-       <div class="dropdown-menu dropdown-menu-right regions">
+       <div class="dropdown-menu dropdown-menu-right js-regions">
        </div>
-    </div>
+  </div>
   </div>
   </div>
  </div>
   {% for num in range(num_of_requests) %}
   <div class="container fresh-requests-main">
     <div class="d-flex justify-content-between">
-      <div class="p-2 text-left text-muted time">{{ time }}</div>
-      <div class="p-2 text-right">
-        <button class="btn btn-link text-muted">в закладки</button>
+      <div class="mr-auto p-2 text-muted time">{{ time }}</div>
+      <div class="ml-auto p-2 ">
+        <button class="btn btn-link">в закладки</button>
       </div>
     </div>
-   <p>{{ request }}</p>
-   <p>{{ from_name }}</p>
-   <div class="d-inline">
-     <button class="btn btn-outline-primary">Показать телефон </button><span class="label label-default text-muted"> {{ views }} просмотров</span>
+    <div class="d-flex justify-content-end">
+      <div class="mr-auto p-2">{{ request }}</div>
+    </div>
+    <div class="d-flex justify-content-end">
+      <div class="mr-auto p-2">{{ from_name }}</div>
+    </div>
+   <div class="d-flex flex-md-row flex-column">
+     <div class="p-2"><button class="btn btn-outline-primary">Показать телефон </button></div>
+     <div class="p-2 align-self-center text-muted mr-auto"> {{ views }}&nbsp;просмотров</div>
    </div>
  </div>
   {% endfor %}

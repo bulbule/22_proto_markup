@@ -7,10 +7,6 @@ body {
   margin-bottom: 20px;
 }
 
-.container-fluid {
-   margin-top: 0.5cm;
-}
-
 .navbar.navbar-toggleable-md.navbar-light {
   background-color: #cccccc;
 }
@@ -33,19 +29,29 @@ body {
     background-color: #d1d1e0;
 }
 
+.mywidth {
+  max-width: 800px;
+
+}
 .dropdown-menu-right {
   right: 0;
   left: auto;
-}
-.container{
-  max-width: 800px;
-  margin-top: 1cm;
 }
 
 .container.fresh-requests-main {
   margin-top: 0.5cm;
   border-top: solid 1px;
   padding-bottom: 0.5cm;
+  padding-left: 0;
+  padding-right:0;
+}
+
+.container.fresh-requests.mywidth {
+  margin-top: 0.5cm;
+}
+
+.container.fresh-requests-header {
+  padding-left: 0;
 }
 
 .btn.btn-secondary.requests {
@@ -57,7 +63,7 @@ body {
   vertical-align: middle;
   line-height: 38px;
 }
-.jumbotron-heading {
+.jumbo-heading {
   font-size: 30px;
   text-transform: uppercase;
   text-align: center;
@@ -75,14 +81,6 @@ body {
   font-size: 80%;
 }
 
-/*label[for=phone]::after {
-  content: " *";
-}
-
-label[for=description-label]::after {
-  content: " *";
-}*/
-
 .btn.btn-secondary {
   text-transform: uppercase;
   border: solid;
@@ -91,7 +89,7 @@ label[for=description-label]::after {
 }
 
 #dropdown-search {
-  padding: 0;
+  padding-left: 0;
 }
 
 #jumbo {
@@ -114,6 +112,10 @@ label[for=description-label]::after {
 .fa.fa-chevron-left {
 	position: absolute;
 	left: -30px;
+}
+
+.fa.fa-user {
+  padding-top: 0.5cm;
 }
 
 .carousel-inner {

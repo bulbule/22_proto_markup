@@ -34,7 +34,7 @@
          <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false">
            Регион: Новосибирск и область
          </a>
-         <div class="dropdown-menu regions" aria-labelledby="navbarDropdownMenuLink">
+         <div class="dropdown-menu js-regions" aria-labelledby="navbarDropdownMenuLink">
          </div>
        </li>
      </ul>
@@ -58,8 +58,8 @@
   </p>
 </div>
 
-<div class="container search">
-    <p class="jumbotron-heading">Вам позвонят лучшие поставщики новосибирска</p>
+<div class="container search mywidth">
+    <p class="jumbo-heading">Вам позвонят лучшие поставщики новосибирска</p>
  <div id="jumbo" class="search-form">
         <div class="col-10 ">
           <h4>Я ищу</h4>
@@ -83,11 +83,13 @@
              Раствор
             </label>
           </div>
-          <div id="dropdown-search" class="col-10">
+          <div class="d-flex flex-sm-column flex-md-row">
+          <div id="dropdown-search" class="p-2 col">
              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Новосибирск и область <b class="caret"></b></a>
-             <div class="dropdown-menu regions" aria-labelledby="navbarDropdownMenuLink">
+             <div class="dropdown-menu js-regions" aria-labelledby="navbarDropdownMenuLink">
              </div>
           </div>
+        </div>
          </div>
 
 
@@ -116,83 +118,119 @@
     </div>
     </div>
    </div>
-<div class="container fresh-requests">
+<div class="container fresh-requests mywidth">
   <h2 class="text-center">Свежие заявки</h2>
-  <div class="container">
-    <div class="row">
-    <div class="col-md-6 col-sm-6">
-      <div class="text-left">
+  <div class="container fresh-requests-header">
+    <div class="row justify-content-end">
+    <div class="col-md-6 col-12">
+      <!-- <div class="text-left"> -->
          раздел: <a href="#" data-toggle="dropdown" class="dropdown-toggle">Все<b class="caret"></b></a>
       <div class="dropdown-menu">
          <a class="dropdown-item" href="#">Action</a>
          <a class="dropdown-item" href="#">Another action</a>
       </div>
-    </div>
+    <!-- </div> -->
   </div>
-  <div class="col-md-6 col-sm-6">
-    <div id="dropdown-fresh" class="text-right">
+  <div class="col-md-5 offset-md-1 col-12 text-md-right">
+    <div id="dropdown-fresh">
        регион: <a href="#" data-toggle="dropdown" class="dropdown-toggle">Новосибирск и область <b class="caret"></b></a>
-       <div class="dropdown-menu dropdown-menu-right regions">
+       <div class="dropdown-menu dropdown-menu-right js-regions">
        </div>
-    </div>
   </div>
   </div>
+  </div>
  </div>
   
   <div class="container fresh-requests-main">
     <div class="d-flex justify-content-between">
-      <div class="p-2 text-left text-muted time">вчера, в 21.30</div>
-      <div class="p-2 text-right">
-        <button class="btn btn-link text-muted">в закладки</button>
+      <div class="mr-auto p-2 text-muted time">вчера, в 21.30</div>
+      <div class="ml-auto p-2 ">
+        <button class="btn btn-link">в закладки</button>
       </div>
     </div>
-   <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой</p>
-   <p>Алексей</p>
-   <div class="d-inline">
-     <button class="btn btn-outline-primary">Показать телефон </button><span class="label label-default text-muted"> 12 просмотров</span>
+    <div class="d-flex justify-content-end">
+      <div class="mr-auto p-2">60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой</div>
+    </div>
+    <div class="d-flex justify-content-end">
+      <div class="mr-auto p-2">Алексей</div>
+    </div>
+   <div class="d-flex flex-md-row flex-column">
+     <div class="p-2"><button class="btn btn-outline-primary">Показать телефон </button></div>
+     <div class="p-2 align-self-center text-muted mr-auto"> 12&nbsp;просмотров</div>
    </div>
+   <!-- <div class="row">
+     <button class="col-3 col-md-3 btn btn-outline-primary">Показать телефон </button>
+     <div class="p-2 col-12 col-md-2 label label-default text-muted mr-auto"> 12&nbsp;просмотров</div>
+   <!- </div> -->
  </div>
   
   <div class="container fresh-requests-main">
     <div class="d-flex justify-content-between">
-      <div class="p-2 text-left text-muted time">вчера, в 21.30</div>
-      <div class="p-2 text-right">
-        <button class="btn btn-link text-muted">в закладки</button>
+      <div class="mr-auto p-2 text-muted time">вчера, в 21.30</div>
+      <div class="ml-auto p-2 ">
+        <button class="btn btn-link">в закладки</button>
       </div>
     </div>
-   <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой</p>
-   <p>Алексей</p>
-   <div class="d-inline">
-     <button class="btn btn-outline-primary">Показать телефон </button><span class="label label-default text-muted"> 12 просмотров</span>
+    <div class="d-flex justify-content-end">
+      <div class="mr-auto p-2">60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой</div>
+    </div>
+    <div class="d-flex justify-content-end">
+      <div class="mr-auto p-2">Алексей</div>
+    </div>
+   <div class="d-flex flex-md-row flex-column">
+     <div class="p-2"><button class="btn btn-outline-primary">Показать телефон </button></div>
+     <div class="p-2 align-self-center text-muted mr-auto"> 12&nbsp;просмотров</div>
    </div>
+   <!-- <div class="row">
+     <button class="col-3 col-md-3 btn btn-outline-primary">Показать телефон </button>
+     <div class="p-2 col-12 col-md-2 label label-default text-muted mr-auto"> 12&nbsp;просмотров</div>
+   <!- </div> -->
  </div>
   
   <div class="container fresh-requests-main">
     <div class="d-flex justify-content-between">
-      <div class="p-2 text-left text-muted time">вчера, в 21.30</div>
-      <div class="p-2 text-right">
-        <button class="btn btn-link text-muted">в закладки</button>
+      <div class="mr-auto p-2 text-muted time">вчера, в 21.30</div>
+      <div class="ml-auto p-2 ">
+        <button class="btn btn-link">в закладки</button>
       </div>
     </div>
-   <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой</p>
-   <p>Алексей</p>
-   <div class="d-inline">
-     <button class="btn btn-outline-primary">Показать телефон </button><span class="label label-default text-muted"> 12 просмотров</span>
+    <div class="d-flex justify-content-end">
+      <div class="mr-auto p-2">60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой</div>
+    </div>
+    <div class="d-flex justify-content-end">
+      <div class="mr-auto p-2">Алексей</div>
+    </div>
+   <div class="d-flex flex-md-row flex-column">
+     <div class="p-2"><button class="btn btn-outline-primary">Показать телефон </button></div>
+     <div class="p-2 align-self-center text-muted mr-auto"> 12&nbsp;просмотров</div>
    </div>
+   <!-- <div class="row">
+     <button class="col-3 col-md-3 btn btn-outline-primary">Показать телефон </button>
+     <div class="p-2 col-12 col-md-2 label label-default text-muted mr-auto"> 12&nbsp;просмотров</div>
+   <!- </div> -->
  </div>
   
   <div class="container fresh-requests-main">
     <div class="d-flex justify-content-between">
-      <div class="p-2 text-left text-muted time">вчера, в 21.30</div>
-      <div class="p-2 text-right">
-        <button class="btn btn-link text-muted">в закладки</button>
+      <div class="mr-auto p-2 text-muted time">вчера, в 21.30</div>
+      <div class="ml-auto p-2 ">
+        <button class="btn btn-link">в закладки</button>
       </div>
     </div>
-   <p>60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой</p>
-   <p>Алексей</p>
-   <div class="d-inline">
-     <button class="btn btn-outline-primary">Показать телефон </button><span class="label label-default text-muted"> 12 просмотров</span>
+    <div class="d-flex justify-content-end">
+      <div class="mr-auto p-2">60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой</div>
+    </div>
+    <div class="d-flex justify-content-end">
+      <div class="mr-auto p-2">Алексей</div>
+    </div>
+   <div class="d-flex flex-md-row flex-column">
+     <div class="p-2"><button class="btn btn-outline-primary">Показать телефон </button></div>
+     <div class="p-2 align-self-center text-muted mr-auto"> 12&nbsp;просмотров</div>
    </div>
+   <!-- <div class="row">
+     <button class="col-3 col-md-3 btn btn-outline-primary">Показать телефон </button>
+     <div class="p-2 col-12 col-md-2 label label-default text-muted mr-auto"> 12&nbsp;просмотров</div>
+   <!- </div> -->
  </div>
   
   <div class="container fresh-requests-main text-center">
@@ -207,45 +245,56 @@
   <div class="carousel-inner" role="listbox">
     
     <div class="carousel-item  active ">
-							<div class="col-sm-2 offset-sm-1 text-center">
-								<i  class="fa fa-user fa-5x user-icon-reviews" aria-hidden="true"></i>
-							</div>
-							<div  class="col-sm-7">
-								<p></p>
-								<p><b>Кирилл, 29 лет, г. Барабинск</b></p>
-								<p>Бла-бла, мне помогло, все супер!Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер!</p>
-							</div>
+							<div class="container">
+                  <div class="row">
+								  <div class="col-md-2 text-center col-12 align-self-center">
+                    <i  class="fa fa-user fa-4x user-icon-reviews" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-md-10 col-12">
+                      <p><b>Кирилл, 29 лет, г. Барабинск</b></p>
+                      <p>Бла-бла, мне помогло, все супер!Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер!</p>
+                  </div>
+                </div>
+					</div>
 		</div>
     
     <div class="carousel-item ">
-							<div class="col-sm-2 offset-sm-1 text-center">
-								<i  class="fa fa-user fa-5x user-icon-reviews" aria-hidden="true"></i>
-							</div>
-							<div  class="col-sm-7">
-								<p></p>
-								<p><b>Кирилл, 29 лет, г. Барабинск</b></p>
-								<p>Бла-бла, мне помогло, все супер!Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер!</p>
-							</div>
+							<div class="container">
+                  <div class="row">
+								  <div class="col-md-2 text-center col-12 align-self-center">
+                    <i  class="fa fa-user fa-4x user-icon-reviews" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-md-10 col-12">
+                      <p><b>Кирилл, 29 лет, г. Барабинск</b></p>
+                      <p>Бла-бла, мне помогло, все супер!Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер!</p>
+                  </div>
+                </div>
+					</div>
 		</div>
     
     <div class="carousel-item ">
-							<div class="col-sm-2 offset-sm-1 text-center">
-								<i  class="fa fa-user fa-5x user-icon-reviews" aria-hidden="true"></i>
-							</div>
-							<div  class="col-sm-7">
-								<p></p>
-								<p><b>Кирилл, 29 лет, г. Барабинск</b></p>
-								<p>Бла-бла, мне помогло, все супер!Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер!</p>
-							</div>
+							<div class="container">
+                  <div class="row">
+								  <div class="col-md-2 text-center col-12 align-self-center">
+                    <i  class="fa fa-user fa-4x user-icon-reviews" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-md-10 col-12">
+                      <p><b>Кирилл, 29 лет, г. Барабинск</b></p>
+                      <p>Бла-бла, мне помогло, все супер!Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер!</p>
+                  </div>
+                </div>
+					</div>
 		</div>
     
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <i class="fa fa-chevron-left" ></i>
+    <i class="fa fa-chevron-left hidden-xs-down" ></i>
+    <i class="fa fa-chevron-left hidden-sm-up" style="position:relative;" ></i>
     <span class="sr-only">Previous</span>
   </a>
   <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+    <i class="fa fa-chevron-right hidden-xs-down"></i>
+    <i class="fa fa-chevron-right hidden-sm-up" style="position:relative;" ></i>
     <span class="sr-only">Next</span>
   </a>
 </div>
@@ -253,7 +302,6 @@
 <div class="col-sm-12 text-center">
    <button id="button-reviews" type="submit" class="btn btn-secondary">Оставить отзыв</button>
 </div>
-<!-- </div> -->
 
 
  

@@ -14,13 +14,13 @@ def load_json(file_path):
 
 if __name__ == '__main__':
     config = load_json(CONFIG)
-    config["index_data_page"].update(config["requests_data"])
-    config["requests_data_page"].update(config["requests_data"])
+    updated_index = {**config["index_data_page"], **config["requests_data"]}
+    updated_requests_data = {**config["requests_data_page"], **config["requests_data"]}
     site = make_site(
         outpath=SITE_PATH,
         contexts=[
             ('index.html',
-             config["index_data_page"]),
+             updated_index),
             ('requests.html',
-             config["requests_data_page"])])
+             updated_requests_data)])
     site.render()
